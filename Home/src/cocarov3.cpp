@@ -255,8 +255,7 @@ public:
     string getTextInput(const string &prompt, int x, int y) {
         string input;
         settextstyle(8, 0, 2);
-        outtextxy(x, y, (char*)prompt.c_str());  // Retained (char*) cast
-
+        outtextxy(x, y, (char*)prompt.c_str());  
         int inputX = x;
         int inputY = y + 30;
 
@@ -278,14 +277,14 @@ public:
                         setfillstyle(SOLID_FILL, BLACK);
                         bar(inputX, inputY - 3, inputX + 295, inputY + 17);
                         settextstyle(8, 0, 2);
-                        outtextxy(x, y, (char*)prompt.c_str());  // Retained (char*) cast
+                        outtextxy(x, y, (char*)prompt.c_str());  
                         setcolor(WHITE);
-                        outtextxy(inputX, inputY, (char*)input.c_str());  // Retained (char*) cast
+                        outtextxy(inputX, inputY, (char*)input.c_str());  
                     }
                 }
                 else if (isprint(ch) && input.size() < 25) {
                     input.push_back(ch);
-                    outtextxy(inputX, inputY, (char*)input.c_str());  // Retained (char*) cast
+                    outtextxy(inputX, inputY, (char*)input.c_str());  
                 }
             }
             delay(10);
@@ -502,11 +501,11 @@ public:
     // Main Menu
     void drawMenu(int centerX, int centerY) {
         settextstyle(8, 0, 4);
-        outtextxy(centerX - 150, centerY - 150, (char*)"1. Player vs Player");  // Adjusted positions
-        outtextxy(centerX - 150, centerY - 100, (char*)"2. Play vs Bot");        // Retained
-        outtextxy(centerX - 150, centerY - 50, (char*)"3. Rules");             // Retained
-        outtextxy(centerX - 150, centerY, (char*)"4. Set Timer");              // New Timer Option
-        outtextxy(centerX - 150, centerY + 50, (char*)"5. Exit");              // Retained
+        outtextxy(centerX - 150, centerY - 150, (char*)"1. Player vs Player");  
+        outtextxy(centerX - 150, centerY - 100, (char*)"2. Play vs Bot");        
+        outtextxy(centerX - 150, centerY - 50, (char*)"3. Rules");             
+        outtextxy(centerX - 150, centerY, (char*)"4. Set Timer");             
+        outtextxy(centerX - 150, centerY + 50, (char*)"5. Exit");           
     }
 
     int handleMenuClick(int centerX, int centerY) {
