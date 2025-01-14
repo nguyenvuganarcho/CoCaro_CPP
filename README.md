@@ -5,7 +5,7 @@
 
 ## Features
 - **Two Game Modes:**
-  - PLayer vs player
+  - Player vs player
   - Player vs bot
 - **Win detection**
 - **Displaying win message**
