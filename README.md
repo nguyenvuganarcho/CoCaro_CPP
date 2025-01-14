@@ -1,9 +1,9 @@
-#Caro game in C++
+# Caro game in C++
 
-##Description
+## Description
 **Caro game** is a strategic 2 players game where the objective is to be the first align 5 of your symbols. This project is a console-based implementation of Caro developed in C++ following Object-Oriented Programming (OOP) principles.
 
-##Features
+## Features
 - **Two Game Modes:**
   - PLayer vs player
   - Player vs bot
@@ -14,14 +14,14 @@
 - **Input and display player name**
 - **Increment player score**
 
-##Installation
+## Installation
 
-###Prequisites
+### Prequisites
 - **C++ compiler**
 - **Set up graphics.h**: follow this repo [soulution-to-graphics.h](https://github.com/ullaskunder3/Solution-to-graphics.h)
 - **Git**
 
-###Steps
+### Steps
 1. **Clone the Repository:**
    ```bash
     git clone https://github.com/your-username/Caro-Game-Cpp.git
@@ -33,7 +33,7 @@
    - Folder `build` where compiler generate .exe
 3. **Run the exe generate on step 2**
 
-##Contributing
+## Contributing
 
 Contributions are welcome! Follow these steps to contribute to the project:
 
